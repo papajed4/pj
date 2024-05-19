@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgb(12, 75, 12);
+    position: sticky;
+    top: 0;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+nav li {
+    padding: 1%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li a {
+    color: var(--NAV-COLOUR);
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: rgba(245, 222, 179, 0.753);
+    border-bottom: 1px solid rgba(245, 222, 179, 0.753);
+    border-top: 1px solid rgba(245, 222, 179, 0.753);
+}
+
+.lefthand,
+.righthand {
+    display: inline-block;
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.lefthand {
+    width: 100%;
+    background-color: green;
+}
+
+.mail {
+    height: 12px;
+}
+
+.leftside,
+.rightside {
+    width: 50%;
+    display: inline-block;
+    height: 575px;
+    /* border: 2px solid black; */
+}
+
+.leftside {
+    background-size: 50%;
+}
+
+.leftside img {
+    width: 100%;
+}
+
+.rightside {
+    float: right;
+    text-align: center;
+}
+
+.rightside h2,
+p {
+    line-height: 50px;
+    padding: 10px 50px;
+    margin: 30px auto;
+}
+
+@media(max-width:1100px) {
+
+    .lefthand,
+    .rightside {
+        width: 100%;
+    }
+
+    .leftside {
+        display: block;
+        width: 100%;
+        background-size: 25%;
+    }
+
+    .rightside {
+        display: block;
+        float: none;
+    }
+}
+
+@media(max-width:810px) {
+    .leftside {
+        height: 600px;
+        background-size: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftside img {
+        height: 650px;
+        width: 100%;
+    }
+
+    .rightside h2,
+    p {
+        line-height: 35px;
+        padding: 5px 50px;
+        margin: 20px auto;
+    }
+
+}
